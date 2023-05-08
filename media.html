@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 태그</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .grid {
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: contain;
+        background-image: url("https://cafeptthumb-phinf.pstatic.net/MjAyMzA1MDhfMjU0/MDAxNjgzNTEwNDIwNzc4.ZLV2kGeb02A4MZutQeqNsc5w6W_lC4rh1CqIl_Y2Jdsg.MDLp3CREalVHUVIFXbv2MjyoS8iQjovxwoN088lApfMg.PNG/Gekko_Green_.png?type=w1600");
+        /* justify-content: center;
+        align-items: center; */
+      }
+
+      .header {
+        background-color: darkslateblue;
+        margin: 0;
+        padding: 0;
+        /* display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: 0.5fr 3fr;
+        height: 100px;
+        width: 100%;
+        opacity: 0.95;
+      }
+
+      .logo {
+        position: absolute;
+        z-index: 1;
+        height: 100px;
+      }
+
+      .logo img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .main {
+        display: flex;
+        width: 100vw;
+        height: auto;
+      }
+
+      .main .vod {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">
+        <div class="logo">
+          <a href="https://playvalorant.com/ko-kr/">
+            <img
+              src="https://cafeptthumb-phinf.pstatic.net/MjAyMzA1MDhfNSAg/MDAxNjgzNTEwNDMzMDgw._btSYIcGyuCDoK-h8HEEUnOVX6o97UZg5Ogi2OfQTJkg.8vCiNCiWJSg8DMR3yDlmlK16aNNOD4h6kn6ZTUzfZFIg.PNG/V_Logomark_Grey.png?type=w1600"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main vod">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/EW_ynPoJIuM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

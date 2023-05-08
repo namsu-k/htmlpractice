@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 연습</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      table {
+        width: 35vw;
+        height: 30vh;
+        margin: 5px;
+      }
+
+      table,
+      th,
+      td,
+      tr {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <td>일</td>
+          <td>이</td>
+          <td>삼</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>일행</td>
+          <td colspan="2">사</td>
+          <!-- <td>오</td> -->
+          <td>육</td>
+        </tr>
+        <tr>
+          <td>이행</td>
+          <td>칠</td>
+          <td rowspan="2">팔</td>
+          <td>구</td>
+        </tr>
+        <tr>
+          <td>삼행</td>
+          <td>십</td>
+          <!-- <td>십일</td> -->
+          <td>십이</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1">
+      <tr>
+        <th colspan="2">지역별 홍차</th>
+      </tr>
+      <tr>
+        <th rowspan="3">중국</th>
+        <td>정산소종</td>
+      </tr>
+      <tr>
+        <td>기문</td>
+      </tr>
+      <tr>
+        <td>운남</td>
+      </tr>
+      <tr>
+        <th rowspan="4">인도 및 스리랑카</th>
+        <td>아삼</td>
+      </tr>
+      <tr>
+        <td>실론</td>
+      </tr>
+      <tr>
+        <td>다질링</td>
+      </tr>
+      <tr>
+        <td>닐기리</td>
+      </tr>
+    </table>
+  </body>
+</html>

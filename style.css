@@ -1,0 +1,46 @@
+/*  Reset CSS  */
+* {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #555;
+}
+img {
+  border: 0;
+}
+body {
+  font: 12px/1.6 Righteous;
+  color: #555;
+}
+
+/* User CSS */
+div {
+  /* background-image: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte299f23c6e55ebed/63bcad4899e03c1edced9b6f/VAL_Ep6_Homepage-CG-Still.jpg"; */
+  width: 100vw;
+  height: 400px;
+  background-color: black;
+}
+
+div img {
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+}
+
+div h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+div ol {
+  text-align: center;
+  font-size: 50px;
+}
