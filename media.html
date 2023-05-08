@@ -11,6 +11,12 @@
         margin: 0;
       }
 
+      a {
+        text-decoration: none;
+        color: indianred;
+        text-shadow: 2px 2px 3px chartreuse;
+      }
+
       .grid {
         width: 100vw;
         height: 100vh;
@@ -37,13 +43,33 @@
         opacity: 0.95;
       }
 
+      nav {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+      }
+
+      ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+
+      li {
+        display: inline-flex;
+        font-weight: bold;
+        font-size: 250%;
+        float: left;
+        list-style-type: none;
+      }
+
       .logo {
         margin: 0;
-        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100px;
+        height: 10vh;
       }
 
       .logo img {
@@ -53,6 +79,7 @@
       }
 
       .main {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -60,7 +87,11 @@
       }
 
       .main .vod {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -72,13 +103,20 @@
             <img src="media/V_Logomark_Red.png" />
           </a>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#"> 이벤트 </a></li>
+            <li><a href="#"> 가맹 PC방 </a></li>
+            <li><a href="#"> 친구 찾기 </a></li>
+          </ul>
+        </nav>
       </div>
       <div class="main">
         <div class="main vod">
           <iframe
-            width="80%"
+            width="100%"
             height="80%"
-            src="https://www.youtube.com/embed/EW_ynPoJIuM"
+            src="https://www.youtube.com/embed/EW_ynPoJIuM?autoplay=1&mute=1&loop=1&playlist=EW_ynPoJIuM&controls=0&playsinline=1;"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
