@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>미디어 태그</title>
     <style>
+      html,
       body {
         margin: 0;
       }
@@ -31,36 +32,35 @@
         flex-wrap: wrap; */
         display: grid;
         grid-template-columns: 0.5fr 3fr;
-        height: 100px;
+        height: 10vh;
         width: 100%;
         opacity: 0.95;
       }
 
       .logo {
+        margin: 0;
         position: absolute;
-        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100px;
       }
 
       .logo img {
         margin: 0;
-        width: 100%;
         height: 100%;
         object-fit: contain;
       }
 
       .main {
         display: flex;
-        width: 100vw;
-        height: auto;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
       }
 
       .main .vod {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100%;
-        height: 90vh;
       }
     </style>
   </head>
@@ -76,8 +76,8 @@
       <div class="main">
         <div class="main vod">
           <iframe
-            width="100%"
-            height="100%"
+            width="80%"
+            height="80%"
             src="https://www.youtube.com/embed/EW_ynPoJIuM"
             title="YouTube video player"
             frameborder="0"
