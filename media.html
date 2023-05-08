@@ -11,8 +11,11 @@
     <title>GEKKO - Valorant</title>
     <style>
       html,
-      body {
+      body,
+      ul,
+      li {
         margin: 0;
+        padding: 0;
       }
 
       a {
@@ -48,17 +51,42 @@
       }
 
       ul {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
+        height: 10vh;
         justify-content: space-evenly;
       }
 
       li {
-        display: inline-flex;
+        display: grid;
         font-weight: bold;
         font-size: 250%;
         float: left;
         list-style-type: none;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+        transform: scale(0.7);
+        transition: all 0.2s;
+      }
+
+      li:hover {
+        border-radius: 20px;
+        display: grid;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        background-color: chartreuse;
+        transform: scale(1);
+      }
+
+      li a {
+        margin: auto;
+        height: 100%;
+        text-align: center;
       }
 
       .logo {
@@ -96,13 +124,20 @@
     <div class="grid">
       <div class="header">
         <div class="logo">
-          <a href="https://playvalorant.com/ko-kr/">
+          <a target="_blank" href="https://playvalorant.com/ko-kr/">
             <img src="media/V_Logomark_Red.png" />
           </a>
         </div>
         <nav>
           <ul>
-            <li><a href="#"> 이벤트 </a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://events.kr.riotgames.com/valflex/main?utm_source=riotbar&utm_medium=homepage&utm_campaign=EP6_ACT3_VALFLEX&utm_id=EP6_ACT3_VALFLEX"
+              >
+                이벤트
+              </a>
+            </li>
             <li><a href="#"> 가맹 PC방 </a></li>
             <li><a href="#"> 친구 찾기 </a></li>
           </ul>
