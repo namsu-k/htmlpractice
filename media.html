@@ -5,127 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       rel="icon"
       href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACJElEQVR4Ac2XJYBUURSG6WXdXZ6su7u7W6JBIpJIRBqRRsFdCu5QcLd1d3c/e/6yNnLHZ8I3fu//vWtn3hFn33AgMbeZOYasDDKQJSEb4Qozw5CNQaYCAdiQnbgNgTk7CixAgIAcGGGzYClQ3X29K7Bc3ERZoTFWD2+UE+h3brWmAJW2UG9+HYUEKFYLjw+OopmiRvqXV6NdADzLLCM3P8ni4T7+Mv3kK0eGXgFwNiHX4gK30orRt2EC4KiabLHwUzGZ6NM4gUVelGkh0WaH10jxtFnSbLwA6MyvpQB/0xdlVFAkTRQ2oC/TBMDDjFJyMSHcy0+mLzlV6MM8AXAmPttogUsphWhrGYFtpk1JMjj8ZHQ62hknsLG7ULQzxwdIUnCUMLw0PI7WBX1hajQEsPf1NQJ/2dzPX9YZrnA9GSusF/ZzPDJFUwCn34vMcmHj++klWhelJ7f/kF0pbH8xpRC/1xQAqAOoB6JOTsdmaQicTy4QtvvEQ+/FojoFQDZXxJXiJr0dbTFc1Xbb4MB6l1WhlycZZYRzIZAv0s1X0i0AjkWmCK9mmhdlbHCkqYeUfgFwLilPJIHqhipnHQF3P4neZlUIJa6nFllHAIQHqjRUINxWqHbWEQCFYbG0KjhYUO2qpHjrCIATUWnCURgvbMAqt4KAEfv88+4+t4KAK5MSEo1/znoJMvJPrd1vTBzi1ky1482pCgGgwIaZt0EwMpClIHsHuHtuEt7AoDYAAAAASUVORK5CYII="
     />
+    <link rel="stylesheet" href="./media_style.css" />
     <title>GEKKO - Valorant</title>
-    <style>
-      html,
-      body,
-      ul,
-      li {
-        margin: 0;
-        padding: 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: indianred;
-        text-shadow: 2px 2px 3px chartreuse;
-      }
-
-      .grid {
-        width: 100vw;
-        height: 100vh;
-        background-position: center;
-        background-size: contain;
-        background-image: url("media/Gekko_Green_.png");
-      }
-
-      .header {
-        background-color: darkslateblue;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 0.5fr 3fr;
-        height: 10vh;
-        width: 100%;
-        opacity: 0.95;
-      }
-
-      nav {
-        display: flex;
-        width: 100%;
-        height: 10vh;
-        align-items: center;
-      }
-
-      ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-        height: 10vh;
-        justify-content: space-evenly;
-      }
-
-      li {
-        display: grid;
-        font-weight: bold;
-        font-size: 250%;
-        float: left;
-        list-style-type: none;
-        height: 100%;
-        align-content: center;
-        justify-content: center;
-        transform: scale(0.7);
-        transition: all 0.2s;
-      }
-
-      li:hover {
-        border-radius: 20px;
-        display: grid;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 10vh;
-        background-color: chartreuse;
-        transform: scale(1);
-      }
-
-      li a {
-        margin: auto;
-        height: 100%;
-        text-align: center;
-      }
-
-      .logo {
-        margin: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 10vh;
-      }
-
-      .logo img {
-        margin: 0;
-        height: 100%;
-        object-fit: contain;
-      }
-
-      .main {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 90vh;
-      }
-
-      .main .vod {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
   </head>
   <body>
     <div class="grid">
-      <div class="header">
+      <header class="header">
         <div class="logo">
           <a target="_blank" href="https://playvalorant.com/ko-kr/">
-            <img src="media/V_Logomark_Red.png" />
+            <img src="./media/V_Logomark_Red.png" />
           </a>
         </div>
         <nav>
@@ -142,7 +40,8 @@
             <li><a href="#"> 친구 찾기 </a></li>
           </ul>
         </nav>
-      </div>
+      </header>
+
       <div class="main">
         <div class="main vod">
           <iframe
@@ -157,5 +56,34 @@
         </div>
       </div>
     </div>
+
+    <div class="bgm">
+      <iframe
+        width="450"
+        height="90"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1461433624&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
+    </div>
+
+    <footer>
+      <a href="https://www.facebook.com/VALORANTKR/">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/playvalorant">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/valorantkr/">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://discord.com/invite/valorantkr">
+        <i class="fa-brands fa-discord"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UC9M8GGVwPqc9ubNruArCNPg">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </footer>
   </body>
 </html>
