@@ -157,7 +157,6 @@ footer i:first-child {
 }
 
 .bgmView {
-  display: none;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -165,6 +164,7 @@ footer i:first-child {
 }
 
 .bgmView:active {
+  display: none;
   position: absolute;
   bottom: 0;
   right: 0;
