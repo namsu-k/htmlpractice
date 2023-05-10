@@ -7,10 +7,11 @@ button {
   padding: 0;
 }
 
-a {
+nav a {
   text-decoration: none;
-  color: rgb(245, 70, 82);
-  text-shadow: 3px 3px 3px #c7f458;
+  /* color: rgb(245, 70, 82); */
+  color: white;
+  /* text-shadow: 3px 3px 3px #c7f458; */
 }
 
 .grid {
@@ -27,19 +28,18 @@ a {
   width: 100%;
   height: 100%;
   background-color: #7d37e7;
-  opacity: 0.1;
+  opacity: 0.05;
 }
 
 .header {
   position: absolute;
-  background-color: rgb(16, 26, 36);
+  background-color: #101a24;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 0.5fr 3fr;
   height: 10vh;
   width: 100%;
-  opacity: 0.95;
 }
 
 nav {
@@ -55,12 +55,13 @@ ul {
   width: 100%;
   height: 10vh;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 li {
   display: grid;
   font-weight: bold;
-  font-size: 250%;
+  font-size: 4vw;
   float: left;
   list-style-type: none;
   height: 100%;
@@ -77,9 +78,15 @@ li:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 10vh;
-  background-color: rgb(199, 244, 88);
+  height: 7vh;
+  /* background-color: rgb(199, 244, 88); */
+  background-color: #2d3944;
   transform: scale(1);
+  border-bottom: rgb(245, 70, 82) solid 3px;
+}
+
+li:hover a {
+  color: #c7f458;
 }
 
 li a {
@@ -123,7 +130,8 @@ li a {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30%;
   align-items: center;
   justify-items: center;
   position: absolute;
@@ -141,7 +149,9 @@ footer {
 }
 
 .social i {
-  font-size: 300%;
+  font-size: 4vw;
+  color: #7d37e7;
+  text-shadow: 2px 2px 2px white;
   transform: scale(0.9);
   transition: all 0.2s;
 }
@@ -187,7 +197,7 @@ footer .bgmToggle {
   border-width: 0;
   background-color: rgb(16, 26, 36);
   color: rgb(245, 70, 82);
-  text-shadow: 2px 2px 2px rgb(199, 244, 88);
+  text-shadow: 2px 2px 2px #c7f458;
   font-weight: bold;
   font-size: xx-large;
 }
