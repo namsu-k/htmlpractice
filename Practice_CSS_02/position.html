@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CSS3 Property Basic</title>
+    <style>
+      .boxWrap {
+        width: 500px;
+        height: 350px;
+        position: relative;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box:nth-child(1) {
+        background-color: red;
+      }
+      .box:nth-child(2) {
+        background-color: green;
+      }
+      .box:nth-child(3) {
+        background-color: blue;
+      }
+
+      .box1 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+
+      .box1:nth-child(1) {
+        background-color: red;
+      }
+      .box1:nth-child(2) {
+        background-color: green;
+      }
+      .box1:nth-child(3) {
+        background-color: blue;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box2:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+      }
+      .box2:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+      }
+      .box2:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box3:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box3:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box3:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box4:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box4:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box4:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+
+      .box5 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box5:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box5:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box5:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+      .wrap5 {
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+      }
+
+      .box6 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box6:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box6:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box6:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+      .wrap6 {
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+        position: relative;
+      }
+
+      .box7 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box7:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box7:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box7:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+      .wrap7 {
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .box8 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box8:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box8:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box8:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+      .wrap8 {
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+        position: relative;
+        overflow: scroll;
+      }
+
+      .box9 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box9:nth-child(1) {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+      }
+      .box9:nth-child(2) {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+      }
+      .box9:nth-child(3) {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+      }
+      .wrap9 {
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+        position: relative;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxWrap">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="boxWrap">
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+    </div>
+
+    <div class="boxWrap">
+      <div class="box2"></div>
+      <div class="box2"></div>
+      <div class="box2"></div>
+    </div>
+
+    <div class="boxWrap">
+      <div class="box3"></div>
+      <div class="box3"></div>
+      <div class="box3"></div>
+    </div>
+
+    <div class="boxWrap">
+      <h1>VALORANTVALORANTVALORANT</h1>
+      <div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+      </div>
+      <h1>VALORANTVALORANTVALORANT</h1>
+    </div>
+
+    <div class="boxWrap">
+      <h1>VALORANTVALORANTVALORANT</h1>
+      <div class="wrap5">
+        <div class="box5"></div>
+        <div class="box5"></div>
+        <div class="box5"></div>
+      </div>
+      <h1>VALORANTVALORANTVALORANT</h1>
+    </div>
+
+    <div class="boxWrap">
+      <h1>VALORANTVALORANTVALORANT</h1>
+      <div class="wrap6">
+        <div class="box6"></div>
+        <div class="box6"></div>
+        <div class="box6"></div>
+      </div>
+      <h1>VALORANTVALORANTVALORANT</h1>
+    </div>
+
+    <div class="boxWrap">
+      <h1>VALORANTVALORANTVALORANT</h1>
+      <div class="wrap7">
+        <div class="box7"></div>
+        <div class="box7"></div>
+        <div class="box7"></div>
+      </div>
+      <h1>VALORANTVALORANTVALORANT</h1>
+    </div>
+
+    <div class="boxWrap">
+      <h1>VALORANTVALORANTVALORANT</h1>
+      <div class="wrap8">
+        <div class="box8"></div>
+        <div class="box8"></div>
+        <div class="box8"></div>
+      </div>
+      <h1>VALORANTVALORANTVALORANT</h1>
+    </div>
+
+    <div class="boxWrap">
+      <h1>VALORANTVALORANTVALORANT</h1>
+      <div class="wrap9">
+        <div class="box9"></div>
+        <div class="box9"></div>
+        <div class="box9"></div>
+      </div>
+      <h1>VALORANTVALORANTVALORANT</h1>
+    </div>
+  </body>
+</html>

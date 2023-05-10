@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CSS3 Style Property Basic</title>
+    <style>
+      html,
+      body,
+      div,
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        width: 100vw;
+        height: 100vh;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#53cbf1+0,ffffff+50,ff4655+100 */
+        background: rgb(83, 203, 241); /* Old browsers */
+        background: -moz-radial-gradient(
+          center,
+          ellipse cover,
+          rgba(83, 203, 241, 1) 0%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 70, 85, 1) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-radial-gradient(
+          center,
+          ellipse cover,
+          rgba(83, 203, 241, 1) 0%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 70, 85, 1) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(
+          ellipse at center,
+          rgba(83, 203, 241, 1) 0%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 70, 85, 1) 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53cbf1', endColorstr='#ff4655',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+
+      h1 {
+        text-align: center;
+        line-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>CSS3 GRADIENT</h1></div>
+  </body>
+</html>

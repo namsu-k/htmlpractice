@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- 알파벳 발로란트 폰트 -->
+    <link
+      href="https://fonts.cdnfonts.com/css/valorant"
+      rel="stylesheet"
+    />
+
+    <!-- 한글 발로란트 폰트 -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>CSS3 Font Property</title>
+    <style>
+      html {
+        font-family: "VALORANT", "Black Han Sans",
+          sans-serif;
+      }
+      .a {
+        font-size: 32px;
+      }
+      .b {
+        font-size: 2em;
+      }
+      .c {
+        font-size: large;
+      }
+      .d {
+        font-size: small;
+      }
+      .e {
+        font-size: 50px;
+      }
+      .font_big {
+        font-size: 2em;
+      }
+      .font_italic {
+        font-style: italic;
+      }
+      .font_bold {
+        font-weight: bold;
+      }
+      .font_center {
+        text-align: center;
+      }
+      .font_right {
+        text-align: right;
+      }
+
+      .button {
+        width: 150px;
+        height: 70px;
+        line-height: 70px;
+        background-color: #101a24;
+        border: 10px solid #ffffff;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px #a9a9a9;
+      }
+
+      .button > a {
+        display: block;
+        text-decoration: none;
+        color: yellowgreen;
+      }
+
+      .cut .off {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgImgWrap">
+      <div class="cut 1"></div>
+      <div class="cut 2"></div>
+      <div class="cut 3"></div>
+      <div class="cut 4"></div>
+      <div class="cut 5"></div>
+      <div class="cut 6"></div>
+      <div class="cut 7"></div>
+      <div class="cut 8"></div>
+      <div class="cut 9"></div>
+    </div>
+
+    <h1>Lorem ipsum</h1>
+    <p class="a">Lorem ipsum</p>
+    <p class="b">Lorem ipsum</p>
+    <p class="c">Lorem ipsum</p>
+    <p class="d">Lorem ipsum</p>
+    <p class="e">발로란트</p>
+
+    <p class="font_big">VALORANT</p>
+    <p class="font_big font_italic">VALORANT</p>
+    <p class="font_big font_italic font_bold">VALORANT</p>
+
+    <p class="font_big">발로란트</p>
+    <p class="font_big font_italic">발로란트</p>
+    <p class="font_big font_italic font_bold">발로란트</p>
+
+    <p class="font_big font_italic font_bold font_center">
+      VALORANT
+    </p>
+    <p class="font_big font_italic font_bold font_center">
+      발로란트
+    </p>
+
+    <p class="font_bold font_right">VALORANT</p>
+    <p class="font_bold font_right">발로란트</p>
+
+    <p class="font_center">
+      I don't know what you've been told But I'd be insane
+      not to play my role Yeah, I know I can break or fold
+      The stakes are low If I could say one thing Just know
+      that I gotta hand that I can lend ya And it don't
+      matter when, know I'll protect ya You can call on me
+      I'm here whenever You know two greater than one but
+      five is better Just know that I gotta hand that I can
+      lend ya And it don't matter when, know I'll protect ya
+      You can call on me I'm here whenever You know two
+      greater than one but five is better Hey Oh you think
+      you tough, huh? I think that's unlikely You can keep
+      on lookin' but can't find nobody like me El Dorado
+      pushin' Boy, I'm fresher than a white tee You know I
+      love you I need someone who can guide me I can't do no
+      lil bag (cash out) I need three mil Shots comin' in,
+      both directions just like a BeReal I been eating good
+      Used to be lucky to get three meals First place, run
+      it up Could care about what he feel Cause I have you,
+      you, you (Give you everything and anything you want)
+      Cause I have you, you, you (You're my everything and
+      anything beyond) Just know that I gotta hand that I
+      can lend ya And it don't matter when, know I'll
+      protect ya You can call on me I'm here whenever You
+      know two greater than one but five is better Just know
+      that I gotta hand that I can lend ya And it don't
+      matter when, know I'll protect ya You can call on me
+      I'm here whenever You know two greater than one but
+      five is better Hey Two, One Two, One
+    </p>
+    <p class="font_center">
+      네가 무슨 말을 했는지 모르겠어 하지만 내 역할을
+      연기하지 않는다면 미친 짓이겠지 그래, 내가 부수거나
+      접을 수 있다는 걸 알아 판돈이 낮다 한 가지 말할 수
+      있다면 너에게 빌려줄 수 있는 손을 내밀어야 한다는 것만
+      알아둬 언제인지는 중요하지 않아, 내가 널 지켜줄 거란
+      걸 알아 당신은 나를 호출할 수 있습니다 난 여기
+      언제든지 하나보다 둘이 더 크지만 다섯이 더 낫다는 걸
+      알잖아 너에게 빌려줄 수 있는 손을 내밀어야 한다는 것만
+      알아둬 언제인지는 중요하지 않아, 내가 널 지켜줄 거란
+      걸 알아 당신은 나를 호출할 수 있습니다 난 여기
+      언제든지 하나보다 둘이 더 크지만 다섯이 더 낫다는 걸
+      알잖아 여기요 오, 당신은 당신이 힘든 생각, 응? 그럴
+      가능성은 낮다고 생각합니다 계속 찾아봐도 나 같은
+      사람은 찾을 수 없어 El Dorado 밀어내기 Boy 난 흰
+      티보다 상큼해 당신은 내가 당신을 사랑한다는 것을 알고
+      있습니다. 나를 안내할 사람이 필요합니다. 난 할 수 없어
+      릴 백 (현금 인출) 3만원이 필요해 총알이 들어오고,
+      BeReal처럼 양방향으로 나는 잘 먹었다 세 끼를 먹을 수
+      있는 행운이 있었어 먼저 시작하세요. 그가 느끼는 것에
+      관심을 가질 수 있습니다. 난 너, 너, 너가 있으니까
+      (당신이 원하는 모든 것과 무엇이든 주세요) 난 너, 너,
+      너가 있으니까 (넌 내 전부이자 그 이상이야) 너에게
+      빌려줄 수 있는 손을 내밀어야 한다는 것만 알아둬
+      언제인지는 중요하지 않아, 내가 널 지켜줄 거란 걸 알아
+      당신은 나를 호출할 수 있습니다 난 여기 언제든지
+      하나보다 둘이 더 크지만 다섯이 더 낫다는 걸 알잖아
+      너에게 빌려줄 수 있는 손을 내밀어야 한다는 것만 알아둬
+      언제인지는 중요하지 않아, 내가 널 지켜줄 거란 걸 알아
+      당신은 나를 호출할 수 있습니다 난 여기 언제든지
+      하나보다 둘이 더 크지만 다섯이 더 낫다는 걸 알잖아
+      여기요 둘, 하나 둘, 하나
+    </p>
+
+    <div class="button">
+      <a
+        href="#"
+        class="font_big font_italic font_bold font_center"
+        >Click</a
+      >
+    </div>
+
+    <!-- <script src="font.js"></script> -->
+  </body>
+</html>

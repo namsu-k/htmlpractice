@@ -5,6 +5,7 @@ li,
 button {
   margin: 0;
   padding: 0;
+  font-family: "Black Han Sans", sans-serif;
 }
 
 nav a {
@@ -61,13 +62,13 @@ ul {
 li {
   display: grid;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 5vw;
   float: left;
   list-style-type: none;
   height: 100%;
   align-content: center;
   justify-content: center;
-  transform: scale(0.7);
+  transform: scale(0.8);
   transition: all 0.2s;
 }
 
