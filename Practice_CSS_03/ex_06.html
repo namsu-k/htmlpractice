@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .container {
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 300px;
+      }
+
+      .top_bar {
+        background: #ff4654;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 50px;
+      }
+
+      .left_bar {
+        background: #0f1923;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        bottom: 0;
+        width: 50px;
+      }
+
+      .ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="container">
+      <p class="ellipsis">Lorem ipsum dolor sit amet.</p>
+      <p class="ellipsis">Donec eros neque.</p>
+      <p class="ellipsis">
+        Nam et metus vitae tellus mattis bibendum.
+      </p>
+      <p class="ellipsis">
+        Pellentesque hendrerit placerat.
+      </p>
+      <p class="ellipsis">
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Qui hic quia consequatur vero officiis
+        perferendis, explicabo illo magni, quidem doloremque
+        quibusdam accusamus iusto, est eligendi. Distinctio
+        impedit atque mollitia inventore.
+      </p>
+    </div>
+  </body>
+</html>

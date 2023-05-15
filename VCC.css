@@ -1,0 +1,80 @@
+.gekko.darkPurple {
+  background-color: #28133c;
+  background-color: rgb(40, 19, 60);
+
+  color: #7f39e9;
+  color: rgb(127, 57, 233);
+
+  border-color: #c7f459;
+  border-color: rgb(199, 244, 89);
+}
+
+.gekko.darkMain {
+  background-color: #0f1923;
+  background-color: rgb(15, 25, 35);
+
+  color: #ff4654;
+  color: rgb(255, 70, 84);
+
+  border-color: #141e28;
+  border-color: rgb(20, 30, 40);
+
+  border-color: #8b978f;
+  border-color: rgb(139, 151, 143);
+}
+
+.gekko.lightMain {
+  background-color: #ece8e1;
+  background-color: rgb(236, 232, 225);
+
+  color: #ff4654;
+  color: rgb(255, 70, 84);
+
+  border-color: #dbd9d2;
+  border-color: rgb(219, 217, 210);
+
+  border-color: #a4aca4;
+  border-color: rgb(164, 172, 164);
+}
+
+.gekko.purple {
+  background-color: #8c4ceb;
+  background-color: rgb(140, 76, 235);
+
+  color: #d1f764;
+  color: rgb(209, 247, 100);
+
+  border-color: #ffb671;
+  border-color: rgb(255, 182, 113);
+}
+
+.gekko.green {
+  background-color: #d2f865;
+  background-color: rgb(210, 248, 101);
+
+  color: #6d3fd6;
+  color: rgb(109, 63, 214);
+}
+
+.logo.Red {
+  color: #ff4553;
+  color: rgb(255, 69, 83);
+}
+
+.logo.Navy {
+  color: #0d1721;
+  color: rgb(13, 23, 33);
+
+  color: #0f1923;
+  color: rgb(15, 25, 35);
+}
+
+.logo.Grey {
+  color: #8b978f;
+  color: rgb(139, 151, 143);
+}
+
+.logo.Off_white {
+  color: #ece8e1;
+  color: rgb(236, 232, 225);
+}
